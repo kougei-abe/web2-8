@@ -44,3 +44,11 @@ opt.selected = true;
 document.getElementById('form').select.onchange = function(){
     location.href = document.getElementById('form').select.value;
 }
+
+// 画像差し替えの処理
+var thmubs = document.querySelevtorAll('.thumb');
+for(idx in thmubs){
+  thmubs[idx].onclick = function(){
+    document.getElementByID("bigimg").src = 'img/' + this.dataset.image + '.png';
+  }
+}
