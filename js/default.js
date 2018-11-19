@@ -46,7 +46,7 @@ document.getElementById('form').select.onchange = function(){
 }
 
 // 画像差し替えの処理
-var thmubs = document.querySelevtorAll('.thumb');
+var thmubs = document.querySelectorAll('.thumb');
 for(idx in thmubs){
   thmubs[idx].onclick = function(){
     document.getElementByID("bigimg").src = 'img/' + this.dataset.image + '.png';
